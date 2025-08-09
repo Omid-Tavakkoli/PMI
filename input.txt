@@ -1,0 +1,16 @@
+# Input parameters file for PMI.py
+# pore = 0, solid = 1
+
+# Input file parameters
+filename = domain.raw              # Path to segmented raw image
+filesize_x = 750                   # Voxels
+filesize_y = 750
+filesize_z = 750
+
+# Processing parameters
+theta = 0                          # Contact angle (degrees), 60 is treated as equivalent to higher angles
+target_saturations = 0.2
+num_threads = 10                   # Number of CPU cores to use
+
+# Tolerance parameters
+tol = 1e-6
