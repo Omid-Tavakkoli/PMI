@@ -2,20 +2,27 @@
 
 This repository contains (`PMI.py`) for initializing lattice Boltzmann simualtions of multiphase flow in porous media. It reads a raw binary image (`uint8`, 0 = pore, 1 = solid), targets specific wetting-phase saturations via morphological operations, and writes labeled fluid distrinutions to disk.
 
+---
+
 ### Features
 - **Parallel processing** with Python multiprocessing
 - **Caching and multi-pass morphology** for large structuring elements
 - **Automatic kernel-size search and refinement** to match target saturation(s)
 
+---
+
 ### Requirements
 - Python 3.9–3.12
 - Packages: `numpy`, `scikit-image`
 
+---
 
 ### Inputs
 - `domain.raw`: 3D binary image stored as `uint8` with shape `(Z, Y, X)`
   - Values: 0 = pore, 1 = solid
 - `input.txt`: runtime configuration (see below).
+
+---
 
 ### Configuration (`input.txt`)
 Keys recognized by `PMI.py`:
@@ -39,6 +46,7 @@ target_saturations = 0.20, 0.50, 0.80
 tol = 1e-6
 num_threads = 8
 ```
+---
 
 ### Usage
 Run from the project directory:
@@ -46,6 +54,7 @@ Run from the project directory:
 ```bash
 python PMI.py
 ```
+---
 
 ### Outputs
 - `result_sat*.raw`: `uint8` 3D arrays labeled as:
