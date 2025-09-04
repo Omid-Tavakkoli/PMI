@@ -17,6 +17,23 @@ This repository contains (`PMI.py`) for initializing lattice Boltzmann simualtio
 
 ---
 
+### Installation
+
+- **pip**:
+
+```bash
+pip install -r requirements.txt
+```
+
+- **conda**:
+
+```bash
+conda create -n pmi -c conda-forge python=3.11 numpy scikit-image
+conda activate pmi
+```
+
+---
+
 ### Inputs
 - `domain.raw`: 3D binary image stored as `uint8` with shape `(Z, Y, X)`
   - Values: 0 = pore, 1 = solid
