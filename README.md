@@ -11,14 +11,9 @@ This repository contains (`PMI.py`) for initializing lattice Boltzmann simualtio
 
 ---
 
-### Requirements
-- Python 3.9–3.12
-- Packages: `numpy`, `scikit-image`
-
----
-
 ### Installation
-
+1) Python 3.9+ recommended.
+2) Install dependencies:
 - **pip**:
 
 ```bash
