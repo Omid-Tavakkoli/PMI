@@ -1,6 +1,8 @@
 ## Pore Morphology-Based Initializer (PMI)
 
-This repository contains (`PMI.py`) for initializing lattice Boltzmann simualtions of multiphase flow in porous media. It reads a raw binary image (`uint8`, 0 = pore, 1 = solid), targets specific wetting-phase saturations via morphological operations, and writes labeled fluid distrinutions to disk.
+This repository contains (`PMI.py`) for initializing lattice Boltzmann simualtions of multiphase flow in porous media. It reads a raw binary image (`uint8`, 0 = pore, 1 = solid), targets specific wetting-phase saturations via morphological operations, and writes labeled fluid distrinutions to disk. For detailed methodology explanation see:
+
+> Tavakkoli, O., Da Wang, Y., Mostaghimi, P., Armstrong, R.T., 2025. "A pore morphology-based initializer to accelerate lattice Boltzmann simulations of capillary-dominated flow with variable wettability" *Physics of Fluids* **37**, **9**. [doi:10.1063/5.0285656](http://dx.doi.org/10.1063/5.0285656)
 
 ---
 
@@ -74,5 +76,28 @@ python PMI.py
   - 1 = non-wetting phase (NWP)
   - 2 = wetting phase (WP)
 
+---
+
+## Re-using the code
+
+If you use this implementation in academic work, please cite the paper above. A BibTeX entry is:
+
+```bibtex
+@article{Tavakkoli2025,
+  title = {A pore morphology-based initializer to accelerate lattice Boltzmann simulations of capillary-dominated flow with variable wettability},
+  volume = {37},
+  ISSN = {1089-7666},
+  url = {http://dx.doi.org/10.1063/5.0285656},
+  DOI = {10.1063/5.0285656},
+  number = {9},
+  journal = {Physics of Fluids},
+  publisher = {AIP Publishing},
+  author = {Tavakkoli,  Omid and Wang,  Ying Da and Mostaghimi,  Peyman and Armstrong,  Ryan T.},
+  year = {2025},
+  month = sep 
+}
+```
+
+---
 
 
